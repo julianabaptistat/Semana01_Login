@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <style>
+      body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      a {
+        color: #9370db;
+        text-decoration: none;
+      }
+      a:hover {
+        color: rgb(245, 208, 244);
+        text-decoration: underline;
+      }
+      #box_2 {
+        font-size: 14px;
+      }
+      .box_color_font {
+        color: #fff;
+      }
+      .container {
+        text-align: center;
+        width: 500px;
+        margin: auto;
+      }
+      #box_1 {
+        background-color: #fff;
+        border: 3px;
+        border-radius: 8px;
+        margin-left: 100px;
+        margin-right: 100px;
+        height: 220px;
+      }
+      #main_box {
+        background-image: linear-gradient(to bottom right, #a153ea, #e3d0f5);
+        border: 3px;
+        border-radius: 8px;
+        height: 500px;
+      }
+      button:hover {
+        color: rgb(245, 208, 244);
+      }
+      .button {
+        background-color: #9370db;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="process.php">
+      <div id="main_box" class="container">
+        <div class="box_color_font">
+          <br /><br />
+          <h1>Hello There.</h1>
+          <br />
+          <h2>Login or sign up to continue.</h2>
+          <br /><br />
+        </div>
+        <div id="box_1">
+          <br />
+          <div>
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter an email"
+            /><br /><br />
+            <label for="password">Password</label><br />
+            <input
+              type="password"
+              name="passwprd"
+              id="password"
+              placeholder="Enter your password"
+            />
+            <br />
+            <br />
+            <button class="button">Login</button>
+            <p id="box_2">Don't have an account? <a href="#">Sign up here</a></p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
